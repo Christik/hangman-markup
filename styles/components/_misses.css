@@ -1,0 +1,17 @@
+/* ====================
+	Misses
+==================== */
+
+.misses {
+  text-align: center;
+}
+
+.misses__title {
+  margin-bottom: 1em;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.misses__letters {
+  justify-content: flex-start;
+}

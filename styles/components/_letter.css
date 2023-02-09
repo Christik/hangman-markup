@@ -1,0 +1,51 @@
+/* ====================
+	Letter
+==================== */
+
+.letter {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: .25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--color-bg-secondary);
+  box-shadow: .2rem .2rem var(--color-shadow-primary);
+  text-align: center;
+}
+
+.letter__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .2rem 0 0 .2rem;
+  width: 100%;
+  color: var(--color-text-inverted);
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-shadow: .1rem .1rem var(--color-shadow-secondary);
+}
+
+.letter--guessed .letter__wrapper,
+.letter--missed .letter__wrapper {
+  box-shadow: inset .2rem .2rem var(--color-shadow-secondary);
+}
+
+.letter--guessed .letter__wrapper {
+  background: var(--color-green);
+}
+
+.letter--missed .letter__wrapper {
+  background: var(--color-pink);
+}
+
+/* ====================
+	Letter Group
+==================== */
+
+.letter-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}

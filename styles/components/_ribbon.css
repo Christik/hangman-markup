@@ -1,0 +1,103 @@
+/* ====================
+	Ribbon
+==================== */
+
+.ribbon {
+  position: relative;
+  margin: 0 2rem;
+  height: 3rem;
+  background: var(--color-orange);
+}
+
+.ribbon__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: inherit;
+  padding: 0 1rem;
+  background: inherit;
+}
+
+.ribbon__content:before,
+.ribbon__content:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.ribbon__content:before {
+  left: 0;
+  border-width: 0 2rem 1rem 0;
+  border-color: transparent var(--color-orange-darkest) transparent transparent;
+}
+
+.ribbon__content:after {
+  right: 0;
+  border-width: 0 0 1rem 2rem;
+  border-color: transparent transparent transparent var(--color-orange-darkest);
+}
+
+.ribbon__left-part,
+.ribbon__right-part {
+  position: absolute;
+  top: 1rem;
+  height: 100%;
+  width: 3rem;
+  background: var(--color-orange-darker);
+}
+
+.ribbon__left-part:before,
+.ribbon__left-part:after,
+.ribbon__right-part:before,
+.ribbon__right-part:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.ribbon__left-part:before,
+.ribbon__right-part:before {
+  top: 0;
+  border-width: 0 1rem 1.5rem 0;
+  border-color: transparent var(--color-orange-darker) transparent transparent;
+}
+
+.ribbon__left-part:after,
+.ribbon__right-part:after {
+  bottom: 0;
+  border-width: 0 0 1.5rem 1rem;
+  border-color: transparent transparent var(--color-orange-darker) transparent;
+}
+
+.ribbon__left-part {
+  right: 100%;
+  transform: translateX(2rem);
+}
+
+.ribbon__left-part:before,
+.ribbon__left-part:after {
+  left: 0;
+  margin-right: -1px;
+  transform: translateX(-100%);
+}
+
+.ribbon__right-part {
+  left: 100%;
+  transform: translateX(-2rem);
+}
+
+.ribbon__right-part:before,
+.ribbon__right-part:after {
+  right: 0;
+  margin-left: -1px;
+  transform: scaleX(-1) translateX(-100%);
+}

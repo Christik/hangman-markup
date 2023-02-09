@@ -1,0 +1,37 @@
+/* ====================
+	Variables
+==================== */
+
+:root {
+
+	/* colors */
+
+	--color-orange: #ffc32f;
+	--color-orange-darker: #fbb300;
+	--color-orange-darkest: #c88e00;
+
+	--color-green: #74cc44;
+	--color-green-darker: #60b632;
+
+	--color-red: #d12c47;
+	--color-pink: #f76aec;
+	--color-blue: #59adec;
+
+	/* app colors */
+
+	--color-bg-primary: #f8f8ff;
+	--color-bg-secondary: #dee4fe;
+
+	--color-text-primary: #636ab2;
+	--color-text-inverted: #ffffff;
+
+	--color-border-primary: #eaedf1;
+
+	--color-shadow-primary: #9ea8fe;
+	--color-shadow-secondary: rgba(0, 0, 0, .15);
+
+	/* font */
+
+	--font-primary: 'Press Start 2P', sans-serif;
+
+}

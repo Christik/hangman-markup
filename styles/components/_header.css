@@ -1,0 +1,31 @@
+/* ====================
+	Header
+==================== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem 3rem 1.5rem;
+  background: var(--color-bg-secondary);
+  box-shadow: .2rem .2rem var(--color-shadow-primary);
+  text-align: center;
+  transform: translateY(-.2rem);
+}
+
+.header__title {
+  padding: .1em 0 0;
+  color: var(--color-text-inverted);
+  font-weight: 400;
+  font-size: 1.7rem;
+  letter-spacing: .08em;
+  line-height: 1;
+  text-shadow: .15rem .15rem var(--color-shadow-secondary);
+  text-transform: uppercase;
+}
+
+.header__description {
+  margin: 1em 0 0;
+  font-size: .7rem;
+  line-height: 1.5;
+}
